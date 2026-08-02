@@ -1,16 +1,66 @@
-# React + Vite
+# 🐱 Catinder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una app estilo Tinder pero para gatos: puntúa gatos aleatorios con ❤ o ✖, guarda tus favoritos en una galería y lleva la cuenta de tus votos.
 
-Currently, two official plugins are available:
+Proyecto hecho con **React + Vite**, consumiendo la API pública de [TheCatAPI](https://thecatapi.com).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🔗 Demo en vivo
 
-## React Compiler
+👉 [Ver Catinder desplegado](https://TU-URL.vercel.app)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<!-- Sustituye el enlace de arriba por tu URL de Vercel cuando lo despliegues -->
 
-## Expanding the ESLint configuration
+## 📸 Capturas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<!-- Añade aquí una captura o un GIF de la app funcionando.
+     Arrastra la imagen a este archivo desde la web de GitHub y se subirá sola. -->
+
+## ✨ Funcionalidades
+
+- Muestra gatos aleatorios traídos de TheCatAPI
+- Votación con dos botones (me gusta / no me gusta)
+- Galería de favoritos que se va llenando con los gatos que te gustan
+- Contador de votos en tiempo real
+- Precarga de imágenes para que no aparezcan a trozos
+- Diseño propio en CSS, sin librerías externas
+
+## 🛠️ Tecnologías
+
+- React
+- Vite
+- CSS puro
+- Fetch API + TheCatAPI
+
+## 🚀 Cómo ejecutarlo en local
+
+```bash
+# Clona el repositorio
+git clone https://github.com/Camilx03/catinder.git
+cd catinder
+
+# Instala las dependencias
+npm install
+
+# Arranca el servidor de desarrollo
+npm run dev
+```
+
+Luego abre en el navegador la URL que aparece en la terminal (normalmente `http://localhost:5173`).
+
+## 📂 Estructura del proyecto
+
+```
+src/
+├── componentes/
+│   ├── TarjetaGato.jsx   → tarjeta con el gato y los botones de votar
+│   ├── Contador.jsx      → marcador de votos
+│   └── Favoritos.jsx     → galería de gatos que han gustado
+├── hooks/
+│   └── useGato.js        → lógica para traer gatos de la API
+├── App.jsx               → componente principal que coordina todo
+└── App.css               → estilos
+```
+
+---
+
+Hecho por [Camilo](https://github.com/Camilx03) 🐈
