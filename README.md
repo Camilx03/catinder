@@ -6,7 +6,7 @@ Proyecto hecho con **React + Vite**, consumiendo la API pública de [TheCatAPI](
 
 ## 🔗 Demo en vivo
 
-👉 [Ver Catinder desplegado](https://TU-URL.vercel.app)
+👉 [Ver Catinder desplegado](https://catinder-kappa.vercel.app)
 
 <!-- Sustituye el enlace de arriba por tu URL de Vercel cuando lo despliegues -->
 
